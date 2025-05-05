@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Bai4.css">
+	<script src="https://kit.fontawesome.com/047a779724.js" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+    <div class="contact-container">
+        <h2>Contact Info</h2>
+        <hr>
+        <form class="contact-form" action="#">
+            <div class="email-field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="name@example.com">
+            </div>
+           
+            <div class="address-field">
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address">
+            </div>
+            
+            <div class="city-field">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city">
+            </div>
+            
+            <div class="region-field">
+                <label for="region">Region</label>
+                <input type="text" id="region" name="region">
+            </div>
+            
+            <div class="poscode-field">
+                <label for="pos-code">Postal Code</label>
+                <input type="text" id="pos-code" name="pos-code">
+            </div>
+           
+            <div class="country-field">
+                <label for="country">Country</label>
+                <select name="country" id="country">
+                    <option value="" selected>--Select Country--</option>
+                    <option value="vn">Vietnam</option>
+                    <option value="us">United States</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="ca">Canada</option>
+                    <option value="au">Australia</option>
+                </select>
+            </div>
+
+            <div class="phone-field">
+                <label for="phone">US Home Phone</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+
+          <div class="photo-field">
+            <label for="photo">Photo</label>
+            <input type="text" id="photo" name="photo">
+          </div>
+           
+        </form>
+    </div>
+
+   <div >
+    <h2>Optional Info</h2>
+    <hr>
+    <form class="optional-form" action="#">
+        <div class="note-field">
+            <label for="note">Note</label>
+            <textarea id="note" name="note"></textarea>
+        </div>
+
+        
+        <div class="preferShift">
+            <label>Preferred Shift</label>
+            <div class="shift-options"> 
+                <div>
+                    <input type="checkbox" id="shiftRegular" name="preferShift" value="regular">
+                    <label for="shiftRegular">Regular</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="shiftGraveyard" name="preferShift" value="graveyard">
+                    <label for="shiftGraveyard">Graveyard</label>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="active-field">
+            <label for="active">Active?</label>
+            <input type="checkbox" id="active" name="active" >
+        </div>
+        
+        <div class="human">
+            <label for="human">Are you human?</label>
+            <div class="human-input-group">
+                <label>Click to change</label>
+                <input type="text" id="human" name="human">
+            </div>
+        </div>
+        
+        <hr>
+        <div class="butts_navigate">
+            <div class="nav-left">
+                <a href="#" class="previous round">&#8249;</a>
+                <a href="#" class="next round">&#8250;</a>
+            </div>
+            <div class="nav-right">
+                <button type="submit" class="btn"><i class="fa-solid fa-check"></i> Submit</button>
+                <button type="button" class="btn"><i class="fa-solid fa-xmark"></i> Cancel</button>
+            </div>
+        </div>
+        
+    </form>
+   </div>
+</body>
+</html>
