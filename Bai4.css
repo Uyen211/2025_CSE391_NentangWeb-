@@ -4,16 +4,57 @@
     padding: 0;
 }
 
+.container{
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+/* INFO */
+.gender-field {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .radio-group {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px; 
+  }
+  
+  .radio-group div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  input[type="radio"] {
+    margin: 0; 
+    vertical-align: middle; 
+  }
+  
+  .gender-label {
+    margin-left: 10px; 
+  }
+  
+/* CONTACT */
+
 .contact-form, 
-.optional-form {
+.optional-form,
+.info-form{
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding: 5%;
+ 
 }
 
 .contact-form label,
-.optional-form label{
+.optional-form label,
+.info-form label {
     display: inline-block;
     width: 30%;
     font-weight: bold;
@@ -23,14 +64,15 @@
 .contact-form select,
 .optional-form input,
 .optional-form textarea,
-.human-input-group input[type="text"] {
+.human-input-group input[type="text"],
+.info-form input{
     flex: 1;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 2px;
 }
 
-.contact-form input{
+.contact-form input, .info-form input{
     width: 60%;
 }
 
@@ -39,9 +81,12 @@
 }
 
 .contact-form input, 
-.human-input-group input[type="text"] {
+.human-input-group input[type="text"],
+.info-form input{
     border-top: 2px solid #444444; 
 }
+
+
 
 /* Optional */
 .note-field,
@@ -49,7 +94,7 @@
 .active-field,
 .human {
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .note-field textarea {
