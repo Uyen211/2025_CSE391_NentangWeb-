@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai5</title>
+    <link rel="stylesheet" href="Bai5.css">
+    <script src="https://kit.fontawesome.com/047a779724.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h2>HR Management</h2>
+        </div>
+        <div class="link-container">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+        </div>
+    </header>
+    <div class="firstLine">
+        <h2>Employee</h2>
+        <a href="#">+ Add</a>
+    </div>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Position</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Thomas Hardy</td>
+                    <td>thomas.hardy@example.com</td>
+                    <td>0123 456 789</td>
+                    <td>Manager</td>
+                    <td>
+                        <a href="#" class="edit" title="Edit" data-toggle="tooltip">Edit</a>
+                        <a href="#" class="delete" title="Delete" data-toggle="tooltip">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Maria Anders</td>
+                    <td>maria.anders@example.de</td>
+                    <td>0987 654 321</td>
+                    <td>Staff</td>
+                    <td>
+                        <a href="#" class="edit" title="Edit" data-toggle="tooltip">Edit</a>
+                        <a href="#" class="delete" title="Delete" data-toggle="tooltip">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Fran Wilson</td>
+                    <td>fran.wilson@example.es</td>
+                    <td>0912 345 678</td>
+                    <td>Staff</td>
+                    <td>
+                        <a href="#" class="edit" title="Edit" data-toggle="tooltip">Edit</a>
+                        <a href="#" class="delete" title="Delete" data-toggle="tooltip">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Dominique Perrier</td>
+                    <td>dominique.perrier@example.fr</td>
+                    <td>0909 888 999</td>
+                    <td>Manager</td>
+                    <td>
+                        <a href="#" class="edit" title="Edit" data-toggle="tooltip">Edit</a>
+                        <a href="#" class="delete" title="Delete" data-toggle="tooltip">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Martin Blank</td>
+                    <td>martin.blank@example.it</td>
+                    <td>0933 777 555</td>
+                    <td>Staff</td>
+                    <td>
+                        <a href="#" class="edit" title="Edit" data-toggle="tooltip">Edit</a>
+                        <a href="#" class="delete" title="Delete" data-toggle="tooltip">Delete</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        
+    </div>
+
+    <div id="formContainer">
+        <div class="header-form">
+            <h2>New Employee</h2>
+            <a href="#" onclick="closeForm()"><i class="fa-solid fa-x"></i></a>
+        </div>
+        <div class="content">
+            <form action="#">
+                <div class="cont1">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                    <label for="sdt">Phone</label>
+                    <input type="text" id="sdt" name="sdt">
+                    <label for="gender">Sex</label>
+                    <div class="gender-group">
+                        <input type="radio" id="nam" name="gender" value="nam">
+                        <label for="nam">Male</label>
+                        <input type="radio" id="nu" name="gender" value="nu">
+                        <label for="nu">Female</label>
+                    </div>
+                    
+                </div>
+                <div class="cont2">
+                    <label for="mail">Email</label>
+                    <input type="text" id="mail" name="mail">
+                    <label for="position">Position</label>
+                    <select name="pos" id="pos">
+                        <option value="" selected>--Select position--</option>
+                        <option value="nv">Staff</option>
+                        <option value="ql">Manager</option>
+                        <option value="gd">CEO</option>
+                    </select>
+                </div>
+                <div class="butts">
+                    <button type="submit" class="btn btn-save">Save</button>
+                    <button type="button" class="btn btn-cancel">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
