@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Form Đăng Ký / Đăng Nhập</title>
+  <link rel="stylesheet" href="/css/TH3-bai2.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+  
+</head>
+<body>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+
+  <div class="container1" id="signupFormWrapper">
+    <div class="header">
+      <div class="text" id="formTitle">Sign Up</div>
+      <div class="underline"></div>
+    </div>
+
+    <form id="signupForm" novalidate>
+      <div class="inputs">
+
+        <div class="input" id="nameInput">
+          <img src="/extra-files/user.png" alt="User icon" />
+          <input type="text" id="name" name="name" placeholder="Name" />
+          <div class="error-message"></div>
+        </div>
+
+        <div class="input">
+          <img src="/extra-files/message.png" alt="Email icon" />
+          <input type="email" id="email" name="email" placeholder="Email Id" />
+          <div class="error-message"></div>
+        </div>
+
+        <div class="input">
+          <img src="/extra-files/locked.png" alt="Password icon" />
+          <input type="password" id="password" name="password" placeholder="Password" />
+          <div class="error-message"></div>
+        </div>
+
+      </div>
+      <div class="submit-container">
+        <button type="submit" class="btn btn-primary" id="submitButton">Đăng ký</button>
+      </div>
+    </form>
+
+    <div id="successMessage" class="alert alert-success mt-3 d-none">
+      Đăng ký thành công!
+      <button class="btn btn-link" id="viewDetail">Xem chi tiết</button>
+      <div id="detail" style="display:none;">Tài khoản của bạn đã được tạo, vui lòng kiểm tra email để kích hoạt.</div>
+    </div>
+  </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="/js/TH3-bai2.js"></script>
+</body>
+</html>
